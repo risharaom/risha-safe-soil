@@ -26,16 +26,7 @@ const Charts = () => {
           </CCardHeader>
 
           <CCardBody>
-            <div className="mt-2" style={{ paddingBottom: '50px' }}>
-              <a
-                href="https://docs.google.com/document/d/1w_MfUSIfahyc2jbSR4qXe2gcuFrrSXwOtHy6EVhnSaI/edit?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:underline"
-              >
-                Learn about lead exposure in Bay Area communities
-              </a>
-            </div>
+           
 
             <div className="flex justify-center gap-6 mb-4">
               {/* Graph/Image 1 */}

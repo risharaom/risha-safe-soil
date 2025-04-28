@@ -229,12 +229,9 @@ const _nav = [
           color: 'danger',
           text: 'PRO',
         },
-      },
-      {
-        component: CNavItem,
-        name: 'Checks & Radios',
-        to: '/forms/checks-radios',
-      },
+      },*/
+      
+      /*
       {
         component: CNavItem,
         name: 'Range',
@@ -379,16 +376,23 @@ const _nav = [
     icon: <CIcon icon={cilCalculator} customClassName="nav-icon" />,
     
   },
+
+  {
+    component: CNavItem,
+    name: 'Research',
+    to: '/forms/checks-radios',
+    icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
+  },
   
   // {
   //   component: CNavTitle,
   //   name: 'Extras',
   // },
-  // {
+   //{
   //   component: CNavGroup,
   //   name: 'Pages',
   //   icon: <CIcon icon={cilStar} customClassName="nav-icon" />,
-  //   items: [
+  //   //items: [
   //     {
   //       component: CNavItem,
   //       name: 'Login',
