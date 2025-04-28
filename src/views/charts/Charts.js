@@ -18,48 +18,47 @@ const Charts = () => {
 
   return (
     <React.Fragment>
-    <CRow>
-      <CCol>
-        <CCard>
-          <CCardHeader>
-            <h5>Graphs</h5>
-          </CCardHeader>
+  <CRow>
+    <CCol>
+      <CCard style={{ backgroundColor: "#808080", color: "white" }}>
+        <CCardHeader style={{ backgroundColor: "#4d4d4d", color: "white" }}>
+          <h5 style={{ color: "white" }}>Graphs</h5>
+        </CCardHeader>
 
-          <CCardBody>
-           
-
-            <div className="flex justify-center gap-6 mb-4">
-              {/* Graph/Image 1 */}
-              <div className="flex flex-col items-center">
-                <img
-                  src={peidmont}
-                  alt="Graph 1"
-                  style={{ width: '800px', height: '400px' }}
-                  className="object-contain rounded"
-                />
-                <p className="mt-2 text-sm font-medium text-gray-700 text-center">
-                  Piedmont - Lead exposure per hour vs Coverage
-                </p>
-              </div>
-
-              {/* Graph/Image 2 */}
-              <div className="flex flex-col items-center">
-                <img
-                  src={wo}
-                  alt="Graph 2"
-                  style={{ width: '800px', height: '400px' }}
-                  className="object-contain rounded"
-                />
-                <p className="mt-2 text-sm font-medium text-gray-700 text-center">
-                  West Oakland - Lead exposure per hour vs Coverage
-                </p>
-              </div>
+        <CCardBody>
+          <div className="flex justify-center gap-6 mb-4">
+            {/* Graph/Image 1 */}
+            <div className="flex flex-col items-center">
+              <img
+                src={peidmont}
+                alt="Graph 1"
+                style={{ width: '800px', height: '400px' }}
+                className="object-contain rounded"
+              />
+              <p className="mt-2 text-sm font-medium text-center" style={{ color: "white" }}>
+                Piedmont - Lead exposure per hour vs Coverage
+              </p>
             </div>
-          </CCardBody>
-        </CCard>
-      </CCol>
-    </CRow>
-  </React.Fragment>
+
+            {/* Graph/Image 2 */}
+            <div className="flex flex-col items-center">
+              <img
+                src={wo}
+                alt="Graph 2"
+                style={{ width: '800px', height: '400px' }}
+                className="object-contain rounded"
+              />
+              <p className="mt-2 text-sm font-medium text-center" style={{ color: "white" }}>
+                West Oakland - Lead exposure per hour vs Coverage
+              </p>
+            </div>
+          </div>
+        </CCardBody>
+      </CCard>
+    </CCol>
+  </CRow>
+</React.Fragment>
+
   )
 }
 

@@ -52,7 +52,7 @@ const Widgets = () => {
               <h6>Only have data for Oakland and Piedmont Areas</h6>
             </CCardHeader>
 
-            <CCardBody style={{ padding: 0 }}>
+            <CCardBody style={{ padding: 0, backgroundColor: "#808080", color: "white" }} >
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96791.57549558603!2d-122.27714386944432!3d37.7859145153001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857d8b28aaed03%3A0x71b415d535759367!2sOakland%2C%20CA!5e0!3m2!1sen!2sus!4v1745802518837!5m2!1sen!2sus"
                 height="400"
@@ -66,7 +66,7 @@ const Widgets = () => {
         </CCol>
 
         <CCol xl={3} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-          <CCard style={{ width: '100%' }}>
+          <CCard style={{ width: '100%',backgroundColor: "#808080", color: "white" }}>
             <CCardBody>
               <button
                 style={{
