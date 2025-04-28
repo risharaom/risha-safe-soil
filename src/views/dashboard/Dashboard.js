@@ -62,8 +62,7 @@ const Dashboard = () => {
       alignItems: "center", 
       padding: "40px", 
       fontFamily: "Arial, sans-serif", 
-      backgroundColor: "#808080", // grey background
-      color: "white", // make all default text white
+      color: "black", // make all default text white
       minHeight: "100vh" 
     }}>
       
@@ -82,10 +81,11 @@ const Dashboard = () => {
         display: "flex", 
         alignItems: "center", 
         maxWidth: "900px", 
-        backgroundColor: "#4d4d4d", // slightly darker grey for content box
+        backgroundColor: "#D6EFFF", // slightly darker grey for content box
         padding: "20px", 
         borderRadius: "10px", 
-        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" 
+        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+        color:"black"
       }}>
         
         {/* Paragraph */}
@@ -94,7 +94,7 @@ const Dashboard = () => {
           flex: 1, 
           marginRight: "20px", 
           lineHeight: "1.6", 
-          color: "white" // paragraph text white
+          color: "black" // paragraph text white
         }}>
           Lead exposure is a serious health risk, especially for children playing in contaminated areas. Our Lead Concentration Prediction Website provides data-driven insights to help communities identify and address lead risks.
     

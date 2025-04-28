@@ -20,10 +20,13 @@ const Charts = () => {
     <React.Fragment>
   <CRow>
     <CCol>
-      <CCard style={{ backgroundColor: "#808080", color: "white" }}>
-        <CCardHeader style={{ backgroundColor: "#4d4d4d", color: "white" }}>
-          <h5 style={{ color: "white" }}>Graphs</h5>
+      <CCard style={{ backgroundColor: "#D6EFFF", color: "black" }}>
+        <CCardHeader style={{ backgroundColor: "#D6EFFF", color: "black" }}>
+          <h5 style={{ color: "black" }}>Graphs</h5>
         </CCardHeader>
+
+        {/* Divider line below header */}
+        <div style={{ borderTop: "1px solid black", width: "100%", marginTop: "8px" }}></div>
 
         <CCardBody>
           <div className="flex justify-center gap-6 mb-4">
@@ -35,7 +38,7 @@ const Charts = () => {
                 style={{ width: '800px', height: '400px' }}
                 className="object-contain rounded"
               />
-              <p className="mt-2 text-sm font-medium text-center" style={{ color: "white" }}>
+              <p className="mt-2 text-sm font-medium text-center" style={{ color: "black" }}>
                 Piedmont - Lead exposure per hour vs Coverage
               </p>
             </div>
@@ -48,7 +51,7 @@ const Charts = () => {
                 style={{ width: '800px', height: '400px' }}
                 className="object-contain rounded"
               />
-              <p className="mt-2 text-sm font-medium text-center" style={{ color: "white" }}>
+              <p className="mt-2 text-sm font-medium text-center" style={{ color: "black" }}>
                 West Oakland - Lead exposure per hour vs Coverage
               </p>
             </div>
@@ -58,6 +61,7 @@ const Charts = () => {
     </CCol>
   </CRow>
 </React.Fragment>
+  
 
   )
 }

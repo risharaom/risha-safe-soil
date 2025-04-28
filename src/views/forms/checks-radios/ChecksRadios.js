@@ -6,7 +6,7 @@ const ChecksRadios = () => {
   return (
     (
       <CCol xs={12}>
-        <CCard style={{ backgroundColor: "#808080", color: "white" }}>
+        <CCard style={{ backgroundColor: "#D6EFFF", color: "black" }}>
           <CCardHeader>
             <strong>Risha M Rao, Jim M Neiss-Cortez</strong>
           </CCardHeader>
