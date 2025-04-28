@@ -17,53 +17,44 @@ import {
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
 
 const _nav = [
+
+  {
+    component: CNavTitle,
+    name: 'Safe Soil ML',
+   
+    
+  },
   {
     component: CNavItem,
-    name: 'Dashboard',
+    name: 'Home',
     to: '/dashboard',
-    icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
-    badge: {
-      color: 'info',
-      text: 'NEW',
-    },
+    icon: <CIcon icon={cilStar} customClassName="nav-icon" />,
+    
   },
-  {
-    component: CNavTitle,
-    name: 'Theme',
-  },
-  {
-    component: CNavItem,
-    name: 'Colors',
-    to: '/theme/colors',
-    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
-  },
-  {
-    component: CNavItem,
-    name: 'Typography',
-    to: '/theme/typography',
-    icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
-  },
-  {
-    component: CNavTitle,
-    name: 'Components',
-  },
-  {
-    component: CNavGroup,
-    name: 'Base',
-    to: '/base',
-    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
-    items: [
-      {
-        component: CNavItem,
-        name: 'Accordion',
-        to: '/base/accordion',
-      },
-      {
-        component: CNavItem,
-        name: 'Breadcrumb',
-        to: '/base/breadcrumbs',
-      },
-      {
+  // {
+  //   component: CNavTitle,
+  //   name: 'Theme',
+  // },
+  // {
+  //   component: CNavItem,
+  //   name: 'Colors',
+  //   to: '/theme/colors',
+  //   icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+  // },
+  // {
+  //   component: CNavItem,
+  //   name: 'Typography',
+  //   to: '/theme/typography',
+  //   icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
+  // },
+  // {
+  //   component: CNavTitle,
+  //   name: 'Components',
+  // },
+  
+      
+    
+      /*{
         component: CNavItem,
         name: (
           <React.Fragment>
@@ -121,17 +112,9 @@ const _nav = [
         component: CNavItem,
         name: 'Progress',
         to: '/base/progress',
-      },
-      {
-        component: CNavItem,
-        name: 'Smart Pagination',
-        href: 'https://coreui.io/react/docs/components/smart-pagination/',
-        badge: {
-          color: 'danger',
-          text: 'PRO',
-        },
-      },
-      {
+      },*/
+     
+      /*{
         component: CNavItem,
         name: (
           <React.Fragment>
@@ -331,26 +314,16 @@ const _nav = [
           color: 'danger',
           text: 'PRO',
         },
-      },
-      {
-        component: CNavItem,
-        name: 'Layout',
-        to: '/forms/layout',
-      },
-      {
-        component: CNavItem,
-        name: 'Validation',
-        to: '/forms/validation',
-      },
-    ],
-  },
+      },*/
+     
+ 
   {
     component: CNavItem,
     name: 'Charts',
     to: '/charts',
     icon: <CIcon icon={cilChartPie} customClassName="nav-icon" />,
   },
-  {
+  /*{
     component: CNavGroup,
     name: 'Icons',
     icon: <CIcon icon={cilStar} customClassName="nav-icon" />,
@@ -398,54 +371,52 @@ const _nav = [
         to: '/notifications/toasts',
       },
     ],
-  },
+  },*/
   {
     component: CNavItem,
-    name: 'Widgets',
+    name: 'Prediction',
     to: '/widgets',
     icon: <CIcon icon={cilCalculator} customClassName="nav-icon" />,
-    badge: {
-      color: 'info',
-      text: 'NEW',
-    },
+    
   },
-  {
-    component: CNavTitle,
-    name: 'Extras',
-  },
-  {
-    component: CNavGroup,
-    name: 'Pages',
-    icon: <CIcon icon={cilStar} customClassName="nav-icon" />,
-    items: [
-      {
-        component: CNavItem,
-        name: 'Login',
-        to: '/login',
-      },
-      {
-        component: CNavItem,
-        name: 'Register',
-        to: '/register',
-      },
-      {
-        component: CNavItem,
-        name: 'Error 404',
-        to: '/404',
-      },
-      {
-        component: CNavItem,
-        name: 'Error 500',
-        to: '/500',
-      },
-    ],
-  },
-  {
-    component: CNavItem,
-    name: 'Docs',
-    href: 'https://coreui.io/react/docs/templates/installation/',
-    icon: <CIcon icon={cilDescription} customClassName="nav-icon" />,
-  },
+  
+  // {
+  //   component: CNavTitle,
+  //   name: 'Extras',
+  // },
+  // {
+  //   component: CNavGroup,
+  //   name: 'Pages',
+  //   icon: <CIcon icon={cilStar} customClassName="nav-icon" />,
+  //   items: [
+  //     {
+  //       component: CNavItem,
+  //       name: 'Login',
+  //       to: '/login',
+  //     },
+  //     {
+  //       component: CNavItem,
+  //       name: 'Register',
+  //       to: '/register',
+  //     },
+  //     {
+  //       component: CNavItem,
+  //       name: 'Error 404',
+  //       to: '/404',
+  //     },
+  //     {
+  //       component: CNavItem,
+  //       name: 'Error 500',
+  //       to: '/500',
+  //     },
+  //   ],
+  // },
+  // {
+  //   component: CNavItem,
+  //   name: 'Docs',
+  //   href: 'https://coreui.io/react/docs/templates/installation/',
+  //   icon: <CIcon icon={cilDescription} customClassName="nav-icon" />,
+  // },
 ]
 
 export default _nav

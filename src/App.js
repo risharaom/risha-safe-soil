@@ -6,7 +6,7 @@ import { CSpinner, useColorModes } from '@coreui/react'
 import './scss/style.scss'
 
 // We use those styles to show code examples, you should remove them in your application.
-import './scss/examples.scss'
+
 
 // Containers
 const DefaultLayout = React.lazy(() => import('./layout/DefaultLayout'))
@@ -40,7 +40,7 @@ const App = () => {
       <Suspense
         fallback={
           <div className="pt-3 text-center">
-            <CSpinner color="primary" variant="grow" />
+            <CSpinner color="light" variant="grow" />
           </div>
         }
       >

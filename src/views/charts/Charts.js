@@ -10,173 +10,65 @@ import {
 } from '@coreui/react-chartjs'
 import { DocsLink } from 'src/components'
 
+import peidmont from '../../assets/images/peidmont.png'
+import wo from '../../assets/images/westoakland.png'
+
 const Charts = () => {
-  const random = () => Math.round(Math.random() * 100)
+
 
   return (
+    <React.Fragment>
     <CRow>
-      <CCol xs={12}></CCol>
-      <CCol xs={6}>
-        <CCard className="mb-4">
+      <CCol>
+        <CCard>
           <CCardHeader>
-            Bar Chart <DocsLink name="chart" />
+            <h5>Graphs</h5>
           </CCardHeader>
+
           <CCardBody>
-            <CChartBar
-              data={{
-                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-                datasets: [
-                  {
-                    label: 'GitHub Commits',
-                    backgroundColor: '#f87979',
-                    data: [40, 20, 12, 39, 10, 40, 39, 80, 40],
-                  },
-                ],
-              }}
-              labels="months"
-            />
-          </CCardBody>
-        </CCard>
-      </CCol>
-      <CCol xs={6}>
-        <CCard className="mb-4">
-          <CCardHeader>
-            Line Chart <DocsLink name="chart" />
-          </CCardHeader>
-          <CCardBody>
-            <CChartLine
-              data={{
-                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-                datasets: [
-                  {
-                    label: 'My First dataset',
-                    backgroundColor: 'rgba(220, 220, 220, 0.2)',
-                    borderColor: 'rgba(220, 220, 220, 1)',
-                    pointBackgroundColor: 'rgba(220, 220, 220, 1)',
-                    pointBorderColor: '#fff',
-                    data: [random(), random(), random(), random(), random(), random(), random()],
-                  },
-                  {
-                    label: 'My Second dataset',
-                    backgroundColor: 'rgba(151, 187, 205, 0.2)',
-                    borderColor: 'rgba(151, 187, 205, 1)',
-                    pointBackgroundColor: 'rgba(151, 187, 205, 1)',
-                    pointBorderColor: '#fff',
-                    data: [random(), random(), random(), random(), random(), random(), random()],
-                  },
-                ],
-              }}
-            />
-          </CCardBody>
-        </CCard>
-      </CCol>
-      <CCol xs={6}>
-        <CCard className="mb-4">
-          <CCardHeader>
-            Doughnut Chart <DocsLink name="chart" />
-          </CCardHeader>
-          <CCardBody>
-            <CChartDoughnut
-              data={{
-                labels: ['VueJs', 'EmberJs', 'ReactJs', 'AngularJs'],
-                datasets: [
-                  {
-                    backgroundColor: ['#41B883', '#E46651', '#00D8FF', '#DD1B16'],
-                    data: [40, 20, 80, 10],
-                  },
-                ],
-              }}
-            />
-          </CCardBody>
-        </CCard>
-      </CCol>
-      <CCol xs={6}>
-        <CCard className="mb-4">
-          <CCardHeader>
-            Pie Chart <DocsLink name="chart" />{' '}
-          </CCardHeader>
-          <CCardBody>
-            <CChartPie
-              data={{
-                labels: ['Red', 'Green', 'Yellow'],
-                datasets: [
-                  {
-                    data: [300, 50, 100],
-                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
-                    hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
-                  },
-                ],
-              }}
-            />
-          </CCardBody>
-        </CCard>
-      </CCol>
-      <CCol xs={6}>
-        <CCard className="mb-4">
-          <CCardHeader>
-            Polar Area Chart
-            <DocsLink name="chart" />
-          </CCardHeader>
-          <CCardBody>
-            <CChartPolarArea
-              data={{
-                labels: ['Red', 'Green', 'Yellow', 'Grey', 'Blue'],
-                datasets: [
-                  {
-                    data: [11, 16, 7, 3, 14],
-                    backgroundColor: ['#FF6384', '#4BC0C0', '#FFCE56', '#E7E9ED', '#36A2EB'],
-                  },
-                ],
-              }}
-            />
-          </CCardBody>
-        </CCard>
-      </CCol>
-      <CCol xs={6}>
-        <CCard className="mb-4">
-          <CCardHeader>
-            Radar Chart <DocsLink name="chart" />
-          </CCardHeader>
-          <CCardBody>
-            <CChartRadar
-              data={{
-                labels: [
-                  'Eating',
-                  'Drinking',
-                  'Sleeping',
-                  'Designing',
-                  'Coding',
-                  'Cycling',
-                  'Running',
-                ],
-                datasets: [
-                  {
-                    label: 'My First dataset',
-                    backgroundColor: 'rgba(220, 220, 220, 0.2)',
-                    borderColor: 'rgba(220, 220, 220, 1)',
-                    pointBackgroundColor: 'rgba(220, 220, 220, 1)',
-                    pointBorderColor: '#fff',
-                    pointHighlightFill: '#fff',
-                    pointHighlightStroke: 'rgba(220, 220, 220, 1)',
-                    data: [65, 59, 90, 81, 56, 55, 40],
-                  },
-                  {
-                    label: 'My Second dataset',
-                    backgroundColor: 'rgba(151, 187, 205, 0.2)',
-                    borderColor: 'rgba(151, 187, 205, 1)',
-                    pointBackgroundColor: 'rgba(151, 187, 205, 1)',
-                    pointBorderColor: '#fff',
-                    pointHighlightFill: '#fff',
-                    pointHighlightStroke: 'rgba(151, 187, 205, 1)',
-                    data: [28, 48, 40, 19, 96, 27, 100],
-                  },
-                ],
-              }}
-            />
+            <div className="mt-2" style={{ paddingBottom: '50px' }}>
+              <a
+                href="https://docs.google.com/document/d/1w_MfUSIfahyc2jbSR4qXe2gcuFrrSXwOtHy6EVhnSaI/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline"
+              >
+                Learn about lead exposure in Bay Area communities
+              </a>
+            </div>
+
+            <div className="flex justify-center gap-6 mb-4">
+              {/* Graph/Image 1 */}
+              <div className="flex flex-col items-center">
+                <img
+                  src={peidmont}
+                  alt="Graph 1"
+                  style={{ width: '800px', height: '400px' }}
+                  className="object-contain rounded"
+                />
+                <p className="mt-2 text-sm font-medium text-gray-700 text-center">
+                  Piedmont - Lead exposure per hour vs Coverage
+                </p>
+              </div>
+
+              {/* Graph/Image 2 */}
+              <div className="flex flex-col items-center">
+                <img
+                  src={wo}
+                  alt="Graph 2"
+                  style={{ width: '800px', height: '400px' }}
+                  className="object-contain rounded"
+                />
+                <p className="mt-2 text-sm font-medium text-gray-700 text-center">
+                  West Oakland - Lead exposure per hour vs Coverage
+                </p>
+              </div>
+            </div>
           </CCardBody>
         </CCard>
       </CCol>
     </CRow>
+  </React.Fragment>
   )
 }
 
