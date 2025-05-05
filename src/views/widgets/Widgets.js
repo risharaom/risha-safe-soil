@@ -11,7 +11,7 @@ import {
 const handlePredict = async () => {
   const lat = parseFloat(document.getElementById("Latitude").value);
   const lon = parseFloat(document.getElementById("Longitude").value);
-  console.log(lat,lon)
+  console.log(lat, lon);
 
   if (isNaN(lat) || isNaN(lon)) {
     alert("Please enter valid latitude and longitude.");
@@ -24,10 +24,11 @@ const handlePredict = async () => {
       headers: {
         "Content-Type": "application/json"
       },
+      mode: "cors",  // Ensure CORS is enabled
+      credentials: "omit",  // Change to "include" or "same-origin" if backend needs credentials
       body: JSON.stringify({ latitude: lat, longitude: lon })
     });
 
-    // Always try to parse response as JSON
     const data = await response.json();
 
     if (response.ok && data.prediction !== undefined) {
@@ -39,6 +40,7 @@ const handlePredict = async () => {
     alert("Network or server error: " + err.message);
   }
 };
+
 
 const Widgets = () => {
   return (
