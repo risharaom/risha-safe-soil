@@ -19,7 +19,7 @@ const handlePredict = async () => {
   }
 
   try {
-    const response = await fetch("https://rishalightbulb.pythonanywhere.com/predict", {
+    const response = await fetch("http://rishalightbulb.pythonanywhere.com/predict", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
